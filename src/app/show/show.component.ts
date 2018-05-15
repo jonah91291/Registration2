@@ -24,9 +24,26 @@ export class ShowComponent implements OnInit {
     var tousethisagaininprogram = this;
     this.http.get("http://localhost:3000/reg")
     .map((givenresponse: Response)=> givenresponse.json())
-    .subscribe(q=>{tousethisagaininprogram.persons=q;})
+    .subscribe(
+      q=>
+      {
+        tousethisagaininprogram.persons=q;
+      })
 
   }
+//edit(a)
+//{
+  //get that i from 
+//}
 
+
+delete(y){
+  var self = this;
+  this.http.delete("http://localhost:3000/reg/"+y).subscribe(function(d){
+    console.log("data",d)
+    self.getinfo();
+  })
+ 
+}
 
 }
