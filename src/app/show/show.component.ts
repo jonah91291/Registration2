@@ -16,7 +16,6 @@ export class ShowComponent implements OnInit {
 
   ngOnInit() {
     this.getinfo();
-    
   }
   persons=[];
   
@@ -29,7 +28,6 @@ export class ShowComponent implements OnInit {
       {
         tousethisagaininprogram.persons=q;
       })
-
   }
 //edit(a)
 //{
