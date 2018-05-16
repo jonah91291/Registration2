@@ -8,11 +8,14 @@ import { ShowComponent } from './show/show.component';
 
 import {HttpModule} from "@angular/http";
 import { FormsModule } from '@angular/forms';
-import {Routes, RouterModule} from '@angular/router';
+import { Routes,RouterModule} from '@angular/router';
+import { Edit1Component } from './edit1/edit1.component';
+
+
 const routes: Routes =[
   {
     path:"",
-    redirectTo:'tableedits',
+    redirectTo:'',
     pathMatch:'full'
     
   },
@@ -31,11 +34,14 @@ const routes: Routes =[
 }
 ]
 
+
 @NgModule({
   declarations: [
     AppComponent,
     AddComponent,
-    ShowComponent
+    ShowComponent,
+    Edit1Component,
+  
   ],
   imports: [
     BrowserModule,
