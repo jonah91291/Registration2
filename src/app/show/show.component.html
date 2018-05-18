@@ -3,7 +3,7 @@
   <tr>
   <th>EID</th>
   <th>E-NAME</th>
-
+  <th>ACTIONS</th>
   </tr>
   </thead>
   <tbody>
@@ -12,6 +12,8 @@
   <td>{{i.ENAME}}</td>
 
   <td><button type="button" id="delete" (click)="delete(i.id)" class="btn btn-info pull-right">Delete</button>
+      <a [routerLink]="['/edit', i.id]" class="btn btn-info pull-right"> Edit33 </a>
+      
   <button type="button" id="edit" (click)="edit(i.id)" class="btn btn-info pull-right">Edit</button></td>
   </tr>
   </tbody>

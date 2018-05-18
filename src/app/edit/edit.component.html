@@ -1,0 +1,22 @@
+<div style="text-align:center">
+  <div class="addform">
+    <h2>ADD EMPLOYEE DETAILS</h2>
+    
+    <form>
+      <div class="col-lg-3 col-md-3">
+      <div class="form-group">
+
+
+        <label for="EID"> E-ID </label>
+        <input type="text" class="form-control" id="EID"  [(ngModel)]="obj.EID" required  name="EID">
+    
+        <label for="ENAME"> E-NAME </label>
+        <input type="text" class="form-control" id="ENAME"  [(ngModel)]="obj.ENAME" required name="ENAME" >
+    
+        <button type="submit" class="button" (click)="edit(obj.id)">Submit</button>
+   
+      </div>
+ 
+    </div>
+  </form>
+</div>
