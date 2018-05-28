@@ -31,8 +31,8 @@ const routes: Routes =[
   component:ShowComponent
 },
 {
-  path:'edit/:UniqueIDToAccessTheFullData',
-  component:EditComponent
+  path:'add/:UniqueIDToAccessTheFullData/:test',
+  component:AddComponent
 }
 ]
 
