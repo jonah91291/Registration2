@@ -55,7 +55,6 @@ edit(j)
   })
 }
 
-
 }
 
 class info{
